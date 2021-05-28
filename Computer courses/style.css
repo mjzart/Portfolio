@@ -1,0 +1,462 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* END RESET */
+body{
+    font-family: 'Roboto', sans-serif;
+}
+/* Intro */
+.intro{
+    background-image: url("src/main-screen__bgc.png") ;
+    background-position: center;
+    background-size: cover;
+    height: 87vh;
+    
+   
+}
+
+.intro-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+}
+
+.intro-main-text{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 140%;
+    color: #FFFFFF;
+}
+
+.timer{
+    display: flex;
+    height: 200px;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+}
+
+.timer-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 30px;
+    width: 102px;
+    height: 112px;
+    background: #121212;
+    margin-right: 30px;
+}
+
+.time{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 140%;
+    color: #FFFFFF;
+}
+.time-label{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 140%;
+    color: #FFFFFF;
+    opacity: 0.4;
+}
+
+
+/* Header */
+.header{
+    position: absolute;
+    top: 40px;
+    left: 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    z-index: 100;
+}
+
+.menu{
+    display: flex;
+}
+
+.menu-item{
+    box-sizing: border-box;
+    display: inline-block;
+    color: #FFFFFF;
+    margin-left: 56px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.menu-item:hover{
+    border-bottom: 1px solid #FFFFFF;
+    cursor: pointer;
+}
+
+.login-button{
+    align-items: center;
+    padding: 10px 30px;
+    background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
+    border-radius: 50px;
+    color: #FFFFFF;
+}
+
+/* Ending-Intro */
+.ending-intro{
+    height: 13vh;
+    background: #121212;
+    display: flex;
+    align-items: center;
+}
+
+.ending-intro-content{
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+
+}
+
+.order-button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: 190px;
+    max-height: 44px;
+    padding: 10px 30px;
+    background: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);
+    border-radius: 50px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+.couter-students{
+    display: flex;
+    justify-content: center;
+}
+.label-text{
+    color: #FFFFFF;
+    opacity: 0.4;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.bolt-white-text{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 150%;
+    color: #FFFFFF;
+    margin-left: 30px;
+}
+
+.progres-panel{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.bar-legend{
+    display: flex;
+    justify-content: space-between;
+}
+
+.progres-bar{
+    width: 100%;
+    height: 6px;
+    background: #FFFFFF;
+    position: relative;
+    margin: 5px;
+}
+
+.complate-bar{
+    background: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);
+    height: 6px;
+    width: 40%;
+    position: absolute;
+    left: auto;
+}
+
+.general-text{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+    color: #FFFFFF;
+    opacity: 0.4;
+}
+
+.bar-label{
+    display: flex;
+}
+
+/* Main */
+.bgr{
+    background: url("src/bgc.png") repeat;
+}
+
+.about-content{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.pictures{
+    min-width: 526px;
+    height: 499px;
+    box-sizing: border-box;
+    border: 30px solid #C89AFC;
+    border-image: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
+    border-image-slice: 1;
+    z-index: 100;
+    position: relative;
+
+}
+
+.about-text-content{
+    margin-left: 140px;
+}
+
+.about-title{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 140%;
+    color: #FFFFFF;
+    margin-bottom: 45px;
+}
+
+.about-text{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 160%;
+    color: #FFFFFF;
+}
+
+.comp-image{
+    position: absolute;
+    top: 60px;
+}
+
+/* Fast start */
+
+.fast-start-content{
+    height: 90vh;
+}
+
+.start-header{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.start-title{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 140%;
+    color: #FFFFFF;
+}
+
+.start-description{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 160%;
+    color: #FFFFFF;
+    opacity: 0.5;
+    margin-top: 50px ;
+    margin-right: 18px;
+}
+
+.procent-title{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 140%;
+    color: #FFFFFF;
+}
+
+.progres-procent{
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.start-procent-bar{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    height: 80px;
+    align-items: center;
+}
+
+.procent-bar{
+    background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
+    border: none;
+    box-sizing: border-box;
+}
+
+.bar-100{
+    height: 100%;
+}
+.bar-75{
+    height: 75%;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+.bar-50{
+    height: 50%;
+}
+.bar-last{
+    height: 25%;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.progres-text{
+    margin-top: 35px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+}
+
+/* Profession */
+
+.profession-content{
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.profession-title{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 140%;
+    color: #FFFFFF;
+    margin-bottom: 120px;
+}
+
+.profession-parts{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 24px;
+    text-align: center;
+}
+
+.part-title{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 140%;
+    color: #FFFFFF;
+    margin-top: 60px;
+    padding: 0px 20px;
+}
+
+.part-text{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 160%;
+    color: #FFFFFF;
+    opacity: 0.8;
+    margin: 30px 26px;
+}
+
+/* Partnetrs */
+.partners-panel{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 90px;
+}
+.partner1{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
+    text-align: center;
+}
+.partner2{
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
+    text-align: center;
+}
+.partner-last-top{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    text-align: center;
+}
+.partner-last-bottom{
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    text-align: center;
+}
